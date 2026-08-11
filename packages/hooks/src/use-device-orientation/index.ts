@@ -153,7 +153,7 @@ export const useDeviceOrientation = (
         stopListening();
       }
     };
-  }, [options.absolute, isSupported]);
+  }, [options.absolute, isSupported, stopListening, isListening, requestPermission, startListening]);
 
   // Cleanup on unmount
   useEffect(() => {

@@ -3,7 +3,7 @@ import { withContentlayer } from "next-contentlayer";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   turbopack: {},
-  transpilePackages: ["@workspace/ui"],
+  transpilePackages: ["@workspace/ui", "next-mdx-remote"],
 
   // SEO optimizations
   compress: true,
